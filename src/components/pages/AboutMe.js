@@ -1,8 +1,11 @@
 import React from 'react';
+import cancun from './cancun.jpg';
+import './AboutMe.css';
 
 const AboutMe = () => {
     return (
         <div>
+            <img src={cancun} alt="Cancun May 2017"/>
             <p>
                 Hello there. My name is Andrew Hassing (he/him).
             </p>
