@@ -2,21 +2,6 @@ import React from "react";
 import { work } from "../../data/work";
 import {education} from '../../data/education'
 
-const renderPositions = (position, poindex) => {
-    return (
-        <div className="item" key={`position${poindex}`}>
-            <div className="ui tiny header">
-                {position.title}
-            </div>
-            <div>
-                <em>
-                    {position.startDate} - {position.endDate}
-                </em>
-            </div>
-        </div>
-    )
-}
-
 const renderExperience = (data) => {
     return (
         <div className="ui list">
@@ -30,7 +15,19 @@ const renderExperience = (data) => {
                             {company.location}
                         </div>
                         <div className="ui list">
-                            {company.positions.map((position, poindex) => renderPositions(position, poindex))}
+                            {company.positions.map((position, poindex) => {
+                                return (
+                                    <div className="item" key={`position${poindex}`}>
+                                        <div className="ui tiny header">
+                                            {position.title}
+                                        </div>
+                                        <div>
+                                            <em>
+                                                {position.startDate} - {position.endDate}
+                                            </em>
+                                        </div>
+                                    </div>
+                                )})}
                         </div>
                         <div className="ui bulleted list">
                             {company.duties.map( (duty, duindex) =>{
