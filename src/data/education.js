@@ -2,6 +2,7 @@ export const education = [
     {
         name: 'University of Nebraska at Omaha',
         location: 'Omaha, NE',
+        website: 'https://www.unomaha.edu',
         degrees: [
             {
                 degree: 'Masters of Science',
@@ -20,6 +21,7 @@ export const education = [
     {
         name: 'University of Nebraska at Lincoln',
         location: 'Lincoln, NE',
+        website: 'https://www.unl.edu',
         degrees: [
             {
                 degree: 'Bachelor of Science',

@@ -1,7 +1,7 @@
 export const work = [
     {
         name: 'Spreetail, Inc.',
-        website: '',
+        website: 'https://www.wearespreetail.com/',
         location: 'Omaha, NE',
         duties: [
             'Member of the Supply Chain - Operations software squad',
@@ -20,7 +20,7 @@ export const work = [
     },
     {
         name: 'Northrop Grumman',
-        website: '',
+        website: 'https://www.northropgrumman.com/',
         location: 'Bellevue, NE',
         duties: [
             'Support the NPES-RECAP project for U.S. Strategic Command.',
@@ -52,7 +52,7 @@ export const work = [
     },
     {
         name: 'Tenaska, Inc.',
-        website: '',
+        website: 'https://www.tenaska.com/',
         location: 'Omaha, NE',
 
         duties: [
@@ -70,7 +70,7 @@ export const work = [
     },
     {
         name: 'Resource Insurance Consultants',
-        website: '',
+        website: 'https://www.ricomaha.com/',
         location: 'Omaha, NE',
         duties: [
             'Prepared LifeTrack reports to analyze insurance trusts for adequacy, competitiveness, carrier strength, and any other sources of concern.',
@@ -88,7 +88,7 @@ export const work = [
     },
     {
         name: 'Milliman, Inc.',
-        website: '',
+        website: 'https://us.milliman.com/en/',
         location: 'Omaha, NE',
         duties: [
             'Worked with clients in life insurance.',

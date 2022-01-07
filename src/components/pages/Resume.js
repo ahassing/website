@@ -24,7 +24,7 @@ const renderExperience = (data) => {
                 return (
                     <div className="item" key={`company${coindex}`} >
                         <div className="ui header">
-                            {company.name}
+                            <a href={company.website}>{company.name}</a>
                         </div>
                         <div>
                             {company.location}
@@ -55,7 +55,7 @@ const renderEducation = (data) => {
                 return (
                     <div className="item" key={`school${sindex}`} >
                         <div className="ui header">
-                            {school.name}
+                            <a href={school.website}>{school.name}</a>
                         </div>
                         <div>
                             {school.location}
