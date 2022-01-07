@@ -1,5 +1,6 @@
 import React from "react";
 import { work } from "../../data/work";
+import {education} from '../../data/education'
 
 const renderPositions = (position, poindex) => {
     return (
@@ -16,7 +17,7 @@ const renderPositions = (position, poindex) => {
     )
 }
 
-const renderResume = (data) => {
+const renderExperience = (data) => {
     return (
         <div className="ui list">
             {data.map((company, coindex) => {
@@ -47,10 +48,50 @@ const renderResume = (data) => {
     )
 }
 
+const renderEducation = (data) => {
+    return (
+        <div className="ui list">
+            {data.map((school, sindex) => {
+                return (
+                    <div className="item" key={`school${sindex}`} >
+                        <div className="ui header">
+                            {school.name}
+                        </div>
+                        <div>
+                            {school.location}
+                        </div>
+                        <div className="ui list">
+                            {school.degrees.map( (degree, dindex) =>{
+                                return (
+                                    <div className="item" key={`degree${dindex}`}>
+                                        <div>
+                                            {degree.degree}, {degree.graduationDate}
+                                        </div>
+                                        <div>
+                                            {degree.major}
+                                        </div>
+                                        <div>
+                                            {degree.gpa}
+                                        </div>
+                                    </div>
+                                )
+                            })}
+                        </div>
+                    </div>
+                );
+            })}
+        </div>
+    )
+}
+
 const Resume = () => {
     return (
         <div>
-            {renderResume(work)}
+            <h2>Experience</h2>
+            {renderExperience(work)}
+            <div className="ui divider"></div>
+            <h2>Education</h2>
+            {renderEducation(education)}
         </div>
     )
 };
