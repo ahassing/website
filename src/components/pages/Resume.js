@@ -68,10 +68,10 @@ const renderEducation = (data) => {
                                             {degree.degree}, {degree.graduationDate}
                                         </div>
                                         <div>
-                                            {degree.major}
+                                            Major(s): {degree.major}
                                         </div>
                                         <div>
-                                            {degree.gpa}
+                                            GPA: {degree.gpa} / 4.0
                                         </div>
                                     </div>
                                 )

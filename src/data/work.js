@@ -5,7 +5,10 @@ export const work = [
         location: 'Omaha, NE',
         duties: [
             'Member of the Supply Chain - Operations software squad',
-            'test',
+            'Created automation for opening of Fulfillment Centers.',
+            'Created custom labels for ZPL printers.',
+            'Integrated new shipping carriers into label generation.',
+            'Provided on call support for Fulfillment Center user base.'
         ],
         positions: [
             {
@@ -22,6 +25,7 @@ export const work = [
         duties: [
             'Support the NPES-RECAP project for U.S. Strategic Command.',
             'Facilitate Agile ceremonies as a scrum master.',
+            'Support a Java based backend system.',
             'Develop a mapping prototype in using Angular and Leaflet libraries.',
             'Support the SEMS III contract for helping U.S. Air Force Weather (AFW).',
             'Develop weather data ingestion and visualization products for the AFW-WEBS Website using Visual Weather.',  

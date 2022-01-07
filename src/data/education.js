@@ -7,13 +7,13 @@ export const education = [
                     degree: 'Masters of Science',
                     major: 'Computer Science',
                     graduationDate: 'May 2019',
-                    gpa: '3.6/4.0'
+                    gpa: '3.6'
                 },
                 {
                     degree: 'Bachelor of Science',
                     major: 'Computer Science',
                     graduationDate: 'May 2017',
-                    gpa: '3.8/4.0'
+                    gpa: '3.8'
                 }
             ]
         },
@@ -25,7 +25,7 @@ export const education = [
                     degree: 'Bachelor of Science',
                     major: 'Math and Actuary Science',
                     graduationDate: 'May 2009',
-                    gpa: '3.8/4.0'
+                    gpa: '3.8'
                 }
             ]
         },
