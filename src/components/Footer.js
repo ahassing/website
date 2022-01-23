@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <div>
+        <div className="footer">
             Created by Andrew Hassing, 2022
         </div>
     );

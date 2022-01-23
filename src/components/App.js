@@ -5,17 +5,24 @@ import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Footer';
 import NavigationBar from './NavigationBar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-const App = () =>  {
+const App = () => {
   return (
     <div className="ui container">
       <h1 className="ui center aligned header">Andrew Hassing</h1>
-      <NavigationBar />
-      <AboutMe />
-      <Blog />
-      <Contact />
-      <Resume />
-      <Footer />
+      <BrowserRouter>
+        <NavigationBar />
+        <div className="content" style={{position: 'relative', paddingBottom:'15px'}}>
+          <Routes>
+            <Route exact path='/' element={<AboutMe />} />
+            <Route path='/blog' element={<Blog />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/resume' element={<Resume />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
