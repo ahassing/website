@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App = () => {
   return (
-    <div className="ui container">
+    <div className="ui container" style={{paddingTop: '20px'}}>
       <h1 className="ui center aligned header">Andrew Hassing</h1>
       <BrowserRouter>
         <NavigationBar />
