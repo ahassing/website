@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutMe from './pages/AboutMe';
-import Blog from './pages/Blog';
+import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
 import Footer from './Footer';
@@ -15,7 +15,7 @@ const App = () => {
         <NavigationBar />
         <Routes>
           <Route exact path='/' element={<AboutMe />} />
-          <Route path='/blog' element={<Blog />} />
+          <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/resume' element={<Resume />} />
         </Routes>
