@@ -13,14 +13,12 @@ const App = () => {
       <h1 className="ui center aligned header">Andrew Hassing</h1>
       <BrowserRouter>
         <NavigationBar />
-        <div className="content" style={{position: 'relative', paddingBottom:'15px'}}>
-          <Routes>
-            <Route exact path='/' element={<AboutMe />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/resume' element={<Resume />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route exact path='/' element={<AboutMe />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/resume' element={<Resume />} />
+        </Routes>
         <Footer />
       </BrowserRouter>
     </div>
